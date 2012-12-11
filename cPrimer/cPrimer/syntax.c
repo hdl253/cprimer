@@ -8,7 +8,7 @@ int main()
 	sPointer();
 
 
-	scanf("%d",&a);
+	//scanf("%d",&a);
 
 }
 void var()
@@ -105,5 +105,12 @@ void sPointer()
 			printf("%d",*p1);
 		}
 		printf("\n");
+	}
+
+	{
+		int arrayB[2][3] = {{0,1,2},{3,4,5}};
+		int *p2;
+		printf("arrayB:%d\n*arrayB:%d\n&arrayB:%d\n*(*arrayB):%d\n*(*arrayB+1):%d\n*(*(arrayB+1)):%d\n",arrayB,*arrayB,&arrayB,*(*arrayB),*(*arrayB+1),*(*(arrayB+1)));
+		
 	}
 }
