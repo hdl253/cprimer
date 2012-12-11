@@ -16,7 +16,7 @@
 *.out
 *.app
 
-#vs files
+#vs private files
 *.opensdf
 *.sdf
 *.suo
