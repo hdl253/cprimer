@@ -1,0 +1,28 @@
+﻿生成启动时间为 2012-12-11 11:02:35。
+     1>项目“C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\cPrimer\cPrimer.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\cPrimer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt syntax.c
+         syntax.c
+     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(49): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(68): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\Debug\cPrimer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\cPrimer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\Debug\cPrimer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\Debug\cPrimer.lib" /MACHINE:X86 Debug\cPrimer.exe.embed.manifest.res
+         Debug\syntax.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\cPrimer.exe.embed.manifest" /manifest Debug\cPrimer.exe.intermediate.manifest
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         cPrimer.vcxproj -> C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\Debug\cPrimer.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\cPrimer.unsuccessfulbuild”。
+         正在对“Debug\cPrimer.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\cPrimer\cPrimer.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.43
