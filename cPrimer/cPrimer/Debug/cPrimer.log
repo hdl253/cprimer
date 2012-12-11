@@ -1,12 +1,14 @@
-﻿生成启动时间为 2012-12-11 11:02:35。
+﻿生成启动时间为 2012-12-11 16:15:50。
      1>项目“C:\Documents and Settings\haodl\My Documents\GitHub\cprimer\cPrimer\cPrimer\cPrimer.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\cPrimer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt syntax.c
          syntax.c
-     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(49): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
-     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(68): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(11): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(304) : 参见“scanf”的声明
+     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(56): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+     1>c:\documents and settings\haodl\my documents\github\cprimer\cprimer\cprimer\syntax.c(75): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
        ManifestResourceCompile:
          所有输出均为最新。
        Link:
@@ -25,4 +27,4 @@
 
 生成成功。
 
-已用时间 00:00:00.43
+已用时间 00:00:00.76

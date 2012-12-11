@@ -22,3 +22,4 @@
 *.suo
 *.vcxproj.user
 *.log
+*.pdb

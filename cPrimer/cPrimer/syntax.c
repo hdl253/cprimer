@@ -1,8 +1,15 @@
 #include<stdio.h>
 int main()
 {
+	int a;
 	void TypeMember();
+	void sPointer();
 	TypeMember();
+	sPointer();
+
+
+	scanf("%d",&a);
+
 }
 void var()
 {
@@ -78,4 +85,15 @@ void TypeMember()
 		char c='c';
 		printf("%d %c\n",c,c);
 	}
+}
+
+void sPointer()
+{
+	int a=100,b=10;
+	int *p1,*p2;
+	p1=&a;
+	p2=&b;
+	printf("p1=%d;p2=%d\n",p1,p2);
+	printf("*p1=%d;*p2=%d\n",*p1,*p2);
+	printf("&p1=%d;&p2=%d\n",&p1,&p2);
 }
