@@ -96,4 +96,14 @@ void sPointer()
 	printf("p1=%d;p2=%d\n",p1,p2);
 	printf("*p1=%d;*p2=%d\n",*p1,*p2);
 	printf("&p1=%d;&p2=%d\n",&p1,&p2);
+
+	{
+		int arrayA[10] = {0,1,2,3,4,5,6,7,8,9};
+		int *p1;
+		for(p1=arrayA;p1<arrayA+10;p1++)
+		{
+			printf("%d",*p1);
+		}
+		printf("\n");
+	}
 }
