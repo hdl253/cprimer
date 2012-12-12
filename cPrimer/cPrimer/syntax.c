@@ -1,15 +1,14 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 {
-	int a;
 	void TypeMember();
 	void sPointer();
+	void LinkedList();
 	TypeMember();
 	sPointer();
-
-
-	//scanf("%d",&a);
-
+	LinkedList();
+	
 }
 void var()
 {
@@ -53,7 +52,7 @@ void TypeMember()
 
 	//整数
 	{
-		signed int iA=-2147483648; //4字节
+		signed int iA = -2147483648; //4字节
 		signed int iB = 2147483647;
 		printf("int:%d\n%d\n",iA,iB);
 	}
@@ -72,7 +71,7 @@ void TypeMember()
 
 	}
 	{
-		long iA=-2147483648;//4字节
+		long iA= -2147483648;//4字节
 		long iB = 2147483647;
 		printf("long:%d\n%d\n",iA,iB);
 	}
@@ -109,8 +108,32 @@ void sPointer()
 
 	{
 		int arrayB[2][3] = {{0,1,2},{3,4,5}};
-		int *p2;
 		printf("arrayB:%d\n*arrayB:%d\n&arrayB:%d\n*(*arrayB):%d\n*(*arrayB+1):%d\n*(*(arrayB+1)):%d\n",arrayB,*arrayB,&arrayB,*(*arrayB),*(*arrayB+1),*(*(arrayB+1)));
 		
 	}
+}
+
+void LinkedList()
+{
+	int n=0;
+	struct Student
+	{
+		long num;
+		float score;
+		struct Student *next;
+	};
+	struct Student *head;
+	struct Student *p1,*p2;
+	p1=p2=(struct Student *) malloc(sizeof(struct Student));
+	scanf("%d,%f",&p1->num,&p1->score);
+	head = NULL;
+	while(p1->num!=0)
+	{
+		n++;
+		if (n==1) head=p1;
+		p2=p1;
+		p1=(struct Student *) malloc(sizeof(struct Student));
+		scanf("%ld,%f",&p1->num,&p1->score);
+	}
+	p2->next=NULL;
 }
