@@ -4,9 +4,11 @@ int main()
 {
 	void TypeMember();
 	void sPointer();
+	void cStruct();
 	void LinkedList();
 	TypeMember();
 	sPointer();
+	cStruct();
 	LinkedList();
 	
 }
@@ -113,6 +115,39 @@ void sPointer()
 	}
 }
 
+void cStruct()
+{
+	struct Student{
+		long num;
+		float score;
+		char name[20];
+	};
+	struct Student stu[3]={1,1,"a",2,2,"b",3,3,"c"};
+	struct Student *p;
+	
+	printf("struct array *****************************************\n");
+	for(p=stu;p<stu+3;p++)
+	{
+		printf("num:%d  score:%f   name:%s\n",p->num,p->score,p->name);
+	}
+
+	p=(struct Student *)stu[0].name;
+	printf("%s\n",p);
+	p++;
+	printf("%s\n",p);
+	p++;
+	printf("%s\n",p);
+
+	p=(struct Student *)stu[0].num;
+	printf("%d\n",p);
+	p++;
+	printf("%d\n",p);
+	p++;
+	printf("%d\n",p);
+
+	printf("struct array *****************************************\n");
+}
+
 void LinkedList()
 {
 	int n=0;
@@ -133,7 +168,7 @@ void LinkedList()
 		if (n==1) head=p1;
 		p2=p1;
 		p1=(struct Student *) malloc(sizeof(struct Student));
-		scanf("%ld,%f",&p1->num,&p1->score);
+		scanf("%ld,%f",&p1->num,&((*p1).score));
 	}
 	p2->next=NULL;
 }
