@@ -168,7 +168,7 @@ void LinkedList()
 		if (n==1) head=p1;
 		p2=p1;
 		p1=(struct Student *) malloc(sizeof(struct Student));
-		scanf("%ld,%f",&p1->num,&((*p1).score));
+		scanf("%ld,%f",&p1->num,&p1->score);
 	}
 	p2->next=NULL;
 }
